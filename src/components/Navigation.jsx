@@ -1,51 +1,53 @@
 import React from "react";
 import { Link, withRouter } from "react-router-dom";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "./Navigation.css";
 
 function Navigation(props) {
   return (
     <div className="navigation">
-      <nav class="navbar navbar-expand navbar-dark bg-dark">
-        <div class="container">
-          <Link class="navbar-brand" to="/">
+      <nav className="navbar navbar-expand  noteNavigation">
+        <div className="container noteNavigation">
+          <Link className="navbar-brand" to="/">
             KIDZIE
           </Link>
 
           <div>
-            <ul class="navbar-nav ml-auto">
+            <ul className="navbar-nav ml-auto">
               <li
-                class={`nav-item  ${
+                className={`nav-item  ${
                   props.location.pathname === "/" ? "active" : ""
                 }`}
               >
-                <Link class="nav-link" to="/">
+                <Link className="nav-link" to="/">
                   Home
-                  <span class="sr-only">(current)</span>
+                  <span className="sr-only">(current)</span>
                 </Link>
               </li>
               <li
-                class={`nav-item  ${
+                className={`nav-item  ${
                   props.location.pathname === "/about" ? "active" : ""
                 }`}
               >
-                <Link class="nav-link" to="/about">
+                <Link className="nav-link" to="/about">
                   About
                 </Link>
               </li>
               <li
-                class={`nav-item  ${
+                className={`nav-item  ${
                   props.location.pathname === "/contact" ? "active" : ""
                 }`}
               >
-                <Link class="nav-link" to="/contact">
+                <Link className="nav-link" to="/contact">
                   Contact
                 </Link>
               </li>
               <li
-                class={`nav-item  ${
+                className={`nav-item  ${
                   props.location.pathname === "/appone" ? "active" : ""
                 }`}
               >
-                <Link class="nav-link" to="/appone">
+                <Link className="nav-link" to="/appone">
                   Form
                 </Link>
               </li>

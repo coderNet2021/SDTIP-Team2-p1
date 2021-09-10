@@ -69,48 +69,48 @@ class AppOne extends Component {
   render() {
     return (
       <div>
-        <div class="container register-form">
-          <div class="form">
-            <div class="note">
+        <div className="container register-form">
+          <div className="form">
+            <div className="note">
               <p>Kidzi SDTIP TEAM 2</p>
             </div>
             <form onSubmit={this.onSubmitLili}>
-              <div class="form-content">
-                <div class="row">
-                  <div class="col-md-6">
-                    <div class="form-group mb-3">
+              <div className="form-content">
+                <div className="row">
+                  <div className="col-md-6">
+                    <div className="form-group mb-3">
                       <input
                         type="text"
-                        class="form-control"
+                        className="form-control"
                         placeholder="Your Name *"
                         onChange={this.changeFullName}
                         value={this.state.fullName}
                       />
                     </div>
-                    <div class="form-group">
+                    <div className="form-group">
                       <input
                         type="text"
-                        class="form-control mb-3"
+                        className="form-control mb-3"
                         placeholder="username *"
                         onChange={this.changeUsername}
                         value={this.state.username}
                       />
                     </div>
                   </div>
-                  <div class="col-md-6">
-                    <div class="form-group mb-3">
+                  <div className="col-md-6">
+                    <div className="form-group mb-3">
                       <input
                         type="text"
-                        class="form-control"
+                        className="form-control"
                         placeholder="Your E-mail *"
                         onChange={this.changeEmail}
                         value={this.state.email}
                       />
                     </div>
-                    <div class="form-group">
+                    <div className="form-group">
                       <input
                         type="password"
-                        class="form-control mb-3"
+                        className="form-control mb-3"
                         placeholder="Confirm Password *"
                         onChange={this.changePassword}
                         value={this.state.password}
