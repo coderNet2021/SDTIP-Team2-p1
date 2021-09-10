@@ -1,0 +1,116 @@
+.background{
+    background-image: url('kids 8.jpg');
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   height: 7%;
+   width: 100%;
+   background-color: #F5F5DC;
+   color: black;
+   text-align: left;
+}
+
+.fa {
+  position: relative;
+  padding: 5px;
+  font-size: 18px;
+  width: 12px;
+  height:20%;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+  bottom: 45px; right: 0;
+}
+
+.fa:hover {
+    opacity: 0.4;
+}
+
+.fa-facebook {
+  background: black;
+  color: white;
+}
+
+.fa-linkedin {
+  background: black;
+  color: white;
+}
+
+.fa-twitter {
+  background: black;
+  color: white;
+}
+
+.fa-instagram {
+  background: black;
+  color: white;
+}
+
+.social-media {
+    position:relative; left: 1380px;
+}
+
+body {
+  margin: 0;
+}
+
+.header {
+    position: fixed;
+    width: 100%;
+  background: #F5F5DC;
+}
+
+.welcome{
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 65px;
+    color: #008080;
+    text-indent: 60px;
+}
+button{
+            border:none ; padding : 10px; Padding-left : 20px;
+	        Padding-right : 20px; border-radius : 10px;
+	        font-size: 25px; color:#fff; 
+            background-image : linear-gradient(#be9428,#be9428);
+            position: relative; left: 185px ;
+        }
+
+        h4{
+            font-style: italic;
+            text-align: justify;
+            text-justify: inter-word;
+        }
+
+/* Create two equal columns that floats next to each other */
+.column1 {
+  float: left;
+  width: 100%;
+  padding: 10px;
+}
+.column2 {
+  float: left;
+  width: 100%;
+  padding: 10px;
+  height: 0%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.button1 {
+  background-color: black; 
+  color: white;
+}
+
+.button1:hover {
+  color: black;
+}
