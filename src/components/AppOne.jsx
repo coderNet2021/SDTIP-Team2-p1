@@ -111,7 +111,7 @@ class AppOne extends Component {
                       <input
                         type="password"
                         className="form-control mb-3"
-                        placeholder="Confirm Password *"
+                        placeholder="Password *"
                         onChange={this.changePassword}
                         value={this.state.password}
                       />
