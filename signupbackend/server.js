@@ -11,6 +11,7 @@ dotenv.config({ path: "./config.env" });
 //   console.log("Database connected");
 // });
 
+//middlewares
 app.use(express.json());
 app.use(cors());
 app.use("/app", routeUrls);
