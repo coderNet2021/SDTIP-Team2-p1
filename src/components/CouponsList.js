@@ -1,9 +1,21 @@
-import React from 'react'
+import React, { useState ,useEffect} from 'react';
 import { Link } from 'react-router-dom'
+import axios from 'axios';
 import './html/PromoCodesPageStyle.css'
 import imglogo3 from './html/KidzieLogo3.png'
 
 export default function CouponsList() {
+    const [couponsList,setcouponsList]=useState([]);
+    const couponsListAsync=async ()=>{
+        const couponsList=await axios.get("http://localhost:4230/app/v1/sales/allCoupons");
+        console.log(couponsList.data.data.salesCoupons);
+        return couponsList.data.data.salesCoupons;
+      }
+
+      useEffect(() => {
+        couponsListAsync()
+         .then(resp => setcouponsList(resp))
+        }, []) 
   return (
     <div style={{backgroundColor: "#F5F5DC;" }}>
         hello from CouponsList
