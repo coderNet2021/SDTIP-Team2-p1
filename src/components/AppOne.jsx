@@ -53,7 +53,7 @@ class AppOne extends Component {
     };
     //send the registered to the backend
     axios
-      .post("http://localhost:4230/app/signup", registered)
+      .post("http://localhost:4230/app/v1/signup/signup", registered)
       .then((response) => console.log(response.data));
 
     //window.location(./home);

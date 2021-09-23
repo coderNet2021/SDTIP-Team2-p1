@@ -1,4 +1,3 @@
-const { findAllByTestId } = require("@testing-library/dom");
 const mongoose = require("mongoose");
 
 const ProductGroupSchema = new mongoose.Schema({

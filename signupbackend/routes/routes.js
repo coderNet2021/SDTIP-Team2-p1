@@ -17,6 +17,7 @@ router.post("/signup", (request, response) => {
       response.json(data);
     })
     .catch((error) => {
+      console.log(error);
       response.json(error);
     });
 });
