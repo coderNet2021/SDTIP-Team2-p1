@@ -8,9 +8,9 @@ export default function CouponsList() {
     <div style={{backgroundColor: "#F5F5DC;" }}>
         hello from CouponsList
       <div class="row">
-        <div class="column1 left" style={{backgroundColor: "#F5F5DC;" }}>
+        <div class="column1 " style={{backgroundColor: "#F5F5DC;" }}>
           <a href="Home.html">
-            <img data-v-0df74896="" id="kidzieLogo" src={imglogo3}  style={{width: "2.5%;" ,textAlign:"left top"}}/>
+            <img data-v-0df74896="" id="kidzieLogo" src={imglogo3}  style={{width: "2.5%;" ,height:"20%" ,textAlign:"left top"}}/>
             </a>
         </div>
 

@@ -113,7 +113,7 @@
    }
 
    .left {
-    position: relative;
+    /* position: relative; */
     left: 210px;
     top: -10px;
     width: 1540px;
@@ -121,8 +121,8 @@
   
    .column1 {
     float: left;
-    width: 100%; 
-    padding: 10px;
+    width: 50px; 
+    padding: 5px;
   }
 
   .column2 {
