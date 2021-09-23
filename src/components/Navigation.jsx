@@ -50,6 +50,17 @@ function Navigation(props) {
                 <Link className="nav-link" to="/appone">
                   Form
                 </Link>
+               
+              </li>
+              <li
+                className={`nav-item  ${
+                  props.location.pathname === "/salesCoupons" ? "active" : ""
+                }`}
+              >
+                <Link className="nav-link" to="/salesCoupons">
+                Sales Coupons
+                </Link>
+                
               </li>
             </ul>
           </div>
