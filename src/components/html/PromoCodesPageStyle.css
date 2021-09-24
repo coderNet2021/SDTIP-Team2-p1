@@ -190,7 +190,7 @@
           }
 
           .button3{
-              position: relative; top: 15px;
+              position: relative; bottom: 40px;
               left: 770px;
           }
 
@@ -201,6 +201,7 @@
 
   .button2{
       position: relative; left: 20px; bottom: 100px;
+      margin-bottom: 50px;
   }
 
           .button1 {

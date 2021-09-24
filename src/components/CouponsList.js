@@ -8,7 +8,7 @@ import { useGlobalContext } from '../Context';
 
 export default function CouponsList() {
     
-const {isEditing,setIsEditing,couponsList,setcouponsList,editID,setEditID,setAlert}=useGlobalContext();
+const {isEditing,setIsEditing,couponsList,setcouponsList,editID,setEditID,setAlert,isAdding,setIsAdding}=useGlobalContext();
     const couponsListAsync=async ()=>{
         const couponsList=await axios.get("http://localhost:4230/app/v1/sales/allCoupons");
         console.log(couponsList.data.data.salesCoupons);
@@ -34,8 +34,8 @@ const {isEditing,setIsEditing,couponsList,setcouponsList,editID,setEditID,setAle
         }, []) 
 
         const tableData = couponsList.map((coupon)=>{
-            const {_id,status,code}=coupon;
-            return <tr key={_id}><td><b>{code}</b></td><td>{status}</td><td>{code}</td><td>{status}</td><td>{code}</td><td>{status}</td><td>{code}</td><td><div className='btn-container'>
+            const {_id,status,code,startDate,endDate,percentage}=coupon;
+            return <tr key={_id}><td><b>{code}</b></td><td>{status}</td><td>{startDate}</td><td>{endDate}</td><td>{percentage}</td><td>{status}</td><td>{code}</td><td><div className='btn-container'>
             <button
               type='button'
               className='edit-btn'
@@ -58,7 +58,8 @@ const {isEditing,setIsEditing,couponsList,setcouponsList,editID,setEditID,setAle
             console.log('handeled click!');
     
       setEditID(1);
-      setIsEditing(!isEditing);
+      setIsAdding(!isAdding)
+      //setIsEditing(!isEditing);
       
          };
         

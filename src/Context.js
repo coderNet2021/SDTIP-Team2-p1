@@ -10,6 +10,7 @@ const AppProvider = ({ children }) => {
   const [isAddCouponShow,setIsAddCouponShow]=useState(false);
   const [couponsList,setcouponsList]=useState([]);
     const [isEditing, setIsEditing] = useState(false);
+    const [isAdding, setIsAdding] = useState(false);
     const [editID, setEditID] = useState(null);
     const [alert, setAlert] = useState({ show: false, msg: '', type: '' });
 
@@ -18,7 +19,7 @@ const AppProvider = ({ children }) => {
     try {
       const response = await fetch(`${url}`)
       const data = await response.json()
-      console.log(data);
+      //console.log(data);
       const { coupons } = data
       if (coupons) {
         const newCoupons = coupons.map((item) => {
@@ -57,7 +58,7 @@ const AppProvider = ({ children }) => {
 
   return (
     <AppContext.Provider
-      value={{ loading, coupons, setCoupons,isAddCouponShow,setIsAddCouponShow ,couponsList,setcouponsList,isEditing,setIsEditing,editID,setEditID,alert,setAlert}}
+      value={{ loading, coupons, setCoupons,isAddCouponShow,setIsAddCouponShow ,couponsList,setcouponsList,isEditing,setIsEditing,editID,setEditID,alert,setAlert,isAdding,setIsAdding}}
     >
       {children}
     </AppContext.Provider>
