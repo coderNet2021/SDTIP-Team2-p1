@@ -7,6 +7,11 @@ const AppContext = React.createContext()
 const AppProvider = ({ children }) => {
   const [loading, setLoading] = useState(true)
   const [coupons, setCoupons] = useState([])
+  const [isAddCouponShow,setIsAddCouponShow]=useState(false);
+  const [couponsList,setcouponsList]=useState([]);
+    const [isEditing, setIsEditing] = useState(false);
+    const [editID, setEditID] = useState(null);
+    const [alert, setAlert] = useState({ show: false, msg: '', type: '' });
 
   const fetchCoupons = useCallback( async () => {
     setLoading(true)
@@ -52,7 +57,7 @@ const AppProvider = ({ children }) => {
 
   return (
     <AppContext.Provider
-      value={{ loading, coupons, setCoupons }}
+      value={{ loading, coupons, setCoupons,isAddCouponShow,setIsAddCouponShow ,couponsList,setcouponsList,isEditing,setIsEditing,editID,setEditID,alert,setAlert}}
     >
       {children}
     </AppContext.Provider>
