@@ -42,7 +42,7 @@ export default function CouponsAdd() {
     // });
   }
   
-  return (isAdding &&
+  return ((isAdding || isEditing) &&
     <div>
         hello from Coupons Add
         <p class= "form"> Adding Promo Code </p>
