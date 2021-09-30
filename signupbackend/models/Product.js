@@ -1,4 +1,5 @@
 const mongoose = require("mongoose");
+const Schema = mongoose.Schema;
 
 const ProductSchema = new mongoose.Schema({
   name: {
@@ -13,25 +14,34 @@ const ProductSchema = new mongoose.Schema({
     type: Number,
     required: true,
   },
-  companyId: {
-    type: Number,
-    required: true,
+  company: {
+    type: Schema.Types.ObjectId,
+    //required: true,
+    ref: "Company",
   },
-  productGroupId: {
-    type: Number,
-    required: true,
+  productGroup: {
+    type: Schema.Types.ObjectId,
+    //required: true,
+    ref: "ProductGroup",
   },
-  categoryId: {
-    type: Number,
-    required: true,
+  ageGroup: {
+    type: Schema.Types.ObjectId,
+    //required: true,
+    ref: "AgeGroup",
   },
-  designerId: {
-    type: Number,
-    required: true,
+  category: {
+    type: Schema.Types.ObjectId,
+    //required: true,
+    ref: "Category",
+  },
+  designer: {
+    type: Schema.Types.ObjectId,
+    //required: true,
+    ref: "Designer",
   },
   gender: {
-    type: Boolean,
-    required: true,
+    type: String,
+    //required: true,
   },
 });
 
