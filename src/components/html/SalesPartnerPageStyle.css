@@ -1,0 +1,419 @@
+  .sidenav {
+    height: 100%;
+    width: 220px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #F5F5DC;
+    overflow-x: hidden;
+    padding-top: 20px;
+  }
+  
+  .sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+    display: block;
+    border-bottom: 2px solid #be9428;
+  }
+  
+  .sidenav a:hover {
+    background-color: #be9428;
+      color:white;
+  }
+    
+    .form{
+        font-size: 20px;
+        background-color: #be9428;
+        height: 45px;
+        color: white;
+        position: relative;
+        left: 240px;
+        top: -10px;
+        width: 1540px;
+        text-indent: 20px;
+        font-weight: bold;
+        font-family:Arial;
+    }
+  
+    .form1{
+        font-size: 20px;
+        background-color: #F5F5DC;
+        height: 5%;
+        color: black;
+        font-weight: bold;
+        position: relative;
+        left: 280px;
+        top: -10px;
+        width: 1540px;
+        font-weight: bold;
+        font-family:Arial;
+  
+    }
+
+    .footer {
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      height: 7%;
+      width: 100%;
+      background-color: #F5F5DC;
+      color: black;
+      text-align: left;
+   }
+   
+   .fa {
+     position: relative;
+     padding: 5px;
+     font-size: 18px;
+     width: 12px;
+     height:20%;
+     text-align: center;
+     text-decoration: none;
+     margin: 5px 2px;
+     border-radius: 50%;
+     bottom: 45px; right: 0;
+   }
+   
+   .fa:hover {
+       opacity: 0.4;
+   }
+   
+   .fa-facebook {
+     background: black;
+     color: white;
+   }
+   
+   .fa-linkedin {
+     background: black;
+     color: white;
+   }
+   
+   .fa-twitter {
+     background: black;
+     color: white;
+   }
+   
+   .fa-instagram {
+     background: black;
+     color: white;
+   }
+   
+   .social-media {
+       position:relative; left: 1380px;
+   }
+  
+   .header {
+       position: fixed;
+       width: 100%;
+     background: #F5F5DC;
+     color: #f1f1f1;
+   }
+
+   .left {
+    position: relative;
+    left: 170px;
+    top: -10px;
+    width: 1540px;
+    top: -50px;
+  }
+  
+   .column1 {
+    float: left;
+    width: 100%; 
+    padding: 10px;
+  }
+
+  .column2 {
+    float: left;
+    width: 100%;
+    padding: 10px;
+    height: 0%;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  .button {
+              border:none ; padding : 10px; Padding-left : 20px;
+              Padding-right : 20px; border-radius : 3px;
+            height: 50px;
+              font-size: 25px; color:#ffffff; font-weight: bold;
+        font-family:Arial;
+              background-image : linear-gradient(#be9428,#be9428);
+              position: relative; left: 1100px ;
+          }
+
+          .button3{
+              position: relative; top: 15px;
+              left: 770px;
+          }
+
+
+          .button1 {
+    background-color: black; 
+    color: white; 
+  }
+  
+  .button1:hover {
+    color: black;
+  }
+    
+          .required {
+    color: #be9428;
+    font-size: 12pt;
+    position: relative; bottom: 5px;
+  }
+
+  select,input{
+      border: 2px solid #be9428;
+      font-size: 14pt;
+      width: 300px;
+      height: 40px;
+  }
+
+  option:first {
+      color: rgb(138, 136, 136);
+  }
+
+  select {
+      color: rgb(138, 136, 136);
+  }
+   
+ .fa-facebook {
+   background: black;
+   color: white;
+ }
+ 
+ .fa-linkedin {
+   background: black;
+   color: white;
+ }
+ 
+ .fa-twitter {
+   background: black;
+   color: white;
+ }
+ 
+ .fa-instagram {
+   background: black;
+   color: white;
+ }
+ 
+ .social-media {
+     position:relative; left: 1380px;
+ }
+ .column1 {
+    float: left;
+    width: 100%;
+    padding: 10px;
+  }
+  .column2 {
+    float: left;
+    width: 100%;
+    padding: 10px;
+    height: 0%;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  } 
+
+  .sidenav {
+    height: 100%;
+    width: 220px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #F5F5DC;
+    overflow-x: hidden;
+    padding-top: 20px;
+  }
+  
+  .sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+    display: block;
+    border-bottom: 2px solid #be9428;
+  }
+  
+  .sidenav a:hover {
+    background-color: #be9428;
+      color:white;
+  }
+  .form{
+    font-size: 20px;
+    background-color: #be9428;
+    height: 45px;
+    color: white;
+    position: relative;
+    left: 240px;
+    top: -10px;
+    width: 1540px;
+    text-indent: 20px;
+    font-weight: bold;
+    font-family:Arial;
+}
+.form2{
+    font-size: 20px;
+    background-color: #be9428;
+    height: 2px;
+    color: white;
+    position: relative;
+    left: 200px;
+    bottom: -450px;
+    width: 1540px;
+    text-indent: 20px;
+    font-weight: bold;
+    font-family:Arial;
+}
+
+.form1{
+    font-size: 20px;
+    background-color: #F5F5DC;
+    height: 3%;
+    color: black;
+    font-weight: bold;
+    position: relative;
+    left: 240px;
+    top: -10px;
+    width: 1540px;
+    font-weight: bold;
+    font-family:Arial;
+
+}
+
+.button {
+    border:none ; padding : 10px; Padding-left : 20px;
+    Padding-right : 20px; border-radius : 3px;
+  height: 50px;
+    font-size: 25px; color:#ffffff; font-weight: bold;
+font-family:Arial;
+    background-image : linear-gradient(#be9428,#be9428);
+    position: relative; left: 1100px ;
+}
+
+.button3{
+    position: relative; top: 15px;
+    left: 770px;
+}
+
+.button1 {
+    background-color: black; 
+    color: white; 
+  }
+  
+  .button1:hover {
+    color: black;
+  }
+    
+          .required {
+    color: #be9428;
+    font-size: 12pt;
+    position: relative; bottom: 5px;
+  }
+
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: #379937;
+}
+
+body {
+  margin: 40px;
+}
+.dropdown-check-list {
+    display: inline-block;
+  }
+  
+  .dropdown-check-list .anchor {
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+    padding: 5px 50px 5px 10px;
+    border: 1px solid #be9428;
+    background-color: #F5F5DC;
+    color: gray;
+    font-weight: normal;
+  }
+  
+  .dropdown-check-list .anchor:after {
+    position: absolute;
+    content: "";
+    border-left: 2px solid #be9428;
+    border-top: 2px solid #be9428;
+    padding: 5px;
+    right: 10px;
+    top: 20%;
+    -moz-transform: rotate(-135deg);
+    -ms-transform: rotate(-135deg);
+    -o-transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+    transform: rotate(-135deg);
+    font-size: 14pt;
+  }
+  
+  .dropdown-check-list .anchor:active:after {
+    right: 8px;
+    top: 21%;
+  }
+  
+  .dropdown-check-list ul.items {
+    position: relative;
+    left: 0px;
+    padding: 2px;
+    display: none;
+    margin: 0;
+    border: 1px solid #be9428;
+    border-top: #be9428;
+    font-size: 16px;
+  }
+  
+  .dropdown-check-list ul.items li {
+    list-style: none;
+    position: relative;
+    left: 0px;
+  }
+  
+  .dropdown-check-list.visible .anchor {
+    color: #be9428;
+  }
+  
+  .dropdown-check-list.visible .items {
+    display: block;
+  }
+
+
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    border: 1px solid #be9428;
+  }
+  
+  th {
+    text-align: left;
+    padding: 8px;
+  }
+  td {
+    text-align: left;
+    padding: 8px;
+    border-bottom: 1px solid #be9428;
+  }
+  
+  

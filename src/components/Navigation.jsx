@@ -50,7 +50,6 @@ function Navigation(props) {
                 <Link className="nav-link" to="/appone">
                   Form
                 </Link>
-               
               </li>
               <li
                 className={`nav-item  ${
@@ -58,9 +57,17 @@ function Navigation(props) {
                 }`}
               >
                 <Link className="nav-link" to="/salesCoupons">
-                Sales Coupons
+                  Sales Coupons
                 </Link>
-                
+              </li>
+              <li
+                className={`nav-item  ${
+                  props.location.pathname === "/SalesPage" ? "active" : ""
+                }`}
+              >
+                <Link className="nav-link" to="/SalesPage">
+                  Sales Page
+                </Link>
               </li>
             </ul>
           </div>
